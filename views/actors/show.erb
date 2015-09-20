@@ -1,0 +1,10 @@
+<h1> <%= name %> </h1>
+
+<div><a href="/movies">See all movies</a></div>
+<div><a href="/actors">See all actors</a></div>
+
+<ul>
+	<% roles.each do |role| %>
+			<li><a href='/movies/<%= role["title"] %>'><%= role['title'] %></a> as the character <%= role['character'] %></li>
+	<% end %>
+</ul>

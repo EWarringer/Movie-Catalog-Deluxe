@@ -1,0 +1,11 @@
+<h1> <%= title %> </h1>
+
+<div><a href="/movies">See all movies</a></div>
+<div><a href="/actors">See all actors</a></div>
+
+
+<ul>
+	<% cast.each do |cast_member| %>
+			<li><a href="/actors/<%= cast_member["name"] %>"> <%= cast_member["name"] %></a> as <%= cast_member["character"] %></li>
+	<% end %>
+</ul>

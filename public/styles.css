@@ -1,0 +1,7 @@
+html { background-color: lightblue;}
+
+li {
+  background: rgb(173, 200, 230);
+  font-size: 14pt;
+}
+li:nth-child(odd) { background: rgb(173, 216, 230); }
